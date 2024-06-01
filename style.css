@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: black;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #f7f7f7;
+}
+
+#nav{
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    /* height: 100px; */
+    width: 100%;
+    padding: 25px;
+    /* background-color: burlywood; */
+}
+
+#nav-part1{
+   position: absolute;
+    height: 80px;
+    background-color: red;
+}
+
+#nav-part1 svg{
+    
+    display: block;
+}
+
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links{
+    padding: 10px;
+}
+
+#nav-part2 #links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    width: 400px;
+    font-size: 14px;
+    margin-right: 30px;
+}
+#icons{
+    margin-right: 800px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+#nav-part2 #icons{
+    font-weight: 100;
+    font-size: 18px;
+    margin-left: 628px;
+    margin-right: 50px;
+}
+
+#courue{
+    transform: translate(-50%,-50%)scale(0);
+    scale: 0;
+    height: 150px;
+    width: 150px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+}
+#page1{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    /* width: 100%; */
+    padding: 0 1.5vw;
+    padding-top: 23vh;
+    /* background-color: lightcyan; */
+}
+
+
+
+#page1 h1 {
+    color: black;
+    letter-spacing: -5px; /* Adjust the letter spacing */
+    line-height: 1.2; /* Adjust the line height */
+    font-size: 14.2vw; /* Adjust the font size */
+    text-transform: uppercase;
+    font-family: 'futura'; /* Make sure 'futura' is a valid font or replace it with a system font */
+}
+
+
+#video-contener{
+    margin-top: 1vw;
+    height: 93vh;
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+
+
+
+
+#video-contener video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+#video-contener #play {
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+    border-radius: 50%;
+    padding: 4vw 4vw;
+    font-size: 1.4vw;
+    background-color: black;
+    color: white;
+    font-family: 'futura';
+    z-index: 2;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+}
+
+
+/* page 2 */
+ #page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: blue; */
+    align-items: center;
+    display: flex;
+    padding: 2vw 1vw;
+    justify-content: space-between;
+}
+
+#page2 .elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+    margin-left: 10px;
+    /* background-color: blue; */
+    /* Set a specific height for better control */
+    height: 78vh; /* You can adjust this value */
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid black; /* Add a border for visibility */
+}
+
+
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+    scale: 1.2;
+}
+
+#page2 .elem .dets{
+    height: 50px;
+    width: 80%;
+    border-radius: 40px;
+    z-index: 9;
+    position: absolute;
+    background-color: palegoldenrod;    
+}
+
+
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* background-color: aliceblue; */
+}
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    width: 38vw;
+    /* background-color: red; */
+}
+
+.child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+@media (max-width: 600px){
+    
+
+    #page1 {
+        min-height: 70vh;
+        padding: 0 1.5vw;
+        padding-top: 23vh;
+        /* background-color: red; */
+    }
+    
+ 
+  #page1 h1{
+    letter-spacing: -3px;
+    line-height: 60px;
+    font-size: 15.5vw; 
+    }
+    
+    #video-conrener{
+        height: 54vh;
+    }
+
+    #video-contener video{
+        
+        margin-top: 3vw;
+        height: 30vh;
+
+    }
+    
+    
+    #video-contener #play{
+    opacity: 1;
+    scale: 1;
+    padding: 8.5vw 6.2vw;
+    position: absolute;
+    font-size: 4.2vw;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50% , 50%);   
+  
+}
+    
+#page2 {
+    margin-top: -400px;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: blue; */
+    align-items: center;
+    display: flex;
+    padding: 2vw 1vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page2 .elem {
+    margin-top: 0px;
+    margin-left: 1px;
+    /* background-color: blue; */
+    /* Set a specific height for better control */
+    height: 100vh; /* You can adjust this value */
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* position: static; */
+    position: relative;
+    display: flex;
+    margin-bottom: 2vw;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black; 
+}
+
+
+#page2 .elem img{
+    /* padding 1px; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+    scale: 1.2;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+}
+
+
+
